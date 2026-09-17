@@ -6,8 +6,6 @@ class BankingTask implements Runnable {
         this.activityName = activityName;
         this.delay = delay;
     }
-
-    @Override
     public void run() {
         for (int i = 1; i <= 3; i++) {
             System.out.println("Thread: " + Thread.currentThread().getName() + 
